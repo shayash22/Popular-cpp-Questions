@@ -3,7 +3,6 @@
 using namespace std;
 
 #define ll long long
-
  
 int main(){
     ll num,rem,sum=0;
