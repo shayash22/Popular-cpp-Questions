@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-int main(){
+int32_t main(){
     int a; //declaration
     a=12; //initailisation
     cout<<"Size of int: "<<sizeof(a)<<"\n";
