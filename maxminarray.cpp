@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define m1 1000000007
-//#define int long long
+#define int long long
 #define float double
 #define vi vector<int>
 #define pb push_back
@@ -17,23 +17,23 @@ using namespace std;
  
 int32_t main(){
  
-    fast
-    int N,H,x,flag=0;
-    cin>>N>>H>>x;
-    int T[N];
-    for(int i=1; i<=N; ++i){
-        cin>>T[i];
+    int n;
+    cin>>n;
+    int a[n];    
+    for(int i=0;i<n;i++){
+        cin>>a[i];        
     }
-    for(int i=1; i<=N; ++i){
-        if(T[i]+x==H){
-            flag=1;
-            break;
-        }             
+    int mini=a[0];
+    int maxi=a[0];
+    for(int i=0;i<n;i++){
+        if(a[i]<=mini){
+            mini=a[i];
+        }
+        if(a[i]>=maxi){
+            maxi=a[i];
+        }        
     }
-    if(flag==1){
-        cout<<"YES"<<endl;
-    }
-    else{
-        cout<<"NO"<<endl;
-    }
+    cout<<"Mini"<<mini<<endl;
+    cout<<"Maxi"<<maxi<<endl;
+    
 }

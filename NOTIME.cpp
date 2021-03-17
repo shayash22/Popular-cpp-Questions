@@ -20,9 +20,11 @@ int32_t main(){
     fast
     int N,H,x,flag=0;
     cin>>N>>H>>x;
-    int T[N];
-    for(int i=1; i<=N; ++i){
-        cin>>T[i];
+    vector<int>T;
+    for(int i=0; i<N; ++i){
+        int a;
+        cin>>a;
+        T.push_back(a);
     }
     for(int i=1; i<=N; ++i){
         if(T[i]+x==H){
@@ -37,3 +39,4 @@ int32_t main(){
         cout<<"NO"<<endl;
     }
 }
+
